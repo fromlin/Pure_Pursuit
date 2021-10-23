@@ -1,0 +1,12 @@
+<launch>
+
+       <node pkg="uvc_camera" type="uvc_camera_node"   
+             name="uvc_camera_node">
+       </node>
+       <group ns="rpi_trailer">
+                <node pkg="pure_pursuit" type="pure_pursuit"
+                      name="pure_pursuit" output="screen">
+                </node>
+       </group>    
+
+</launch>
